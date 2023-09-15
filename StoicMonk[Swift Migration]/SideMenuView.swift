@@ -9,18 +9,35 @@ import SwiftUI
 
 struct SideMenuView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             
-            NavigationLink(destination: Text("Item 1")) {
-                Text("Item 1")
+            NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true)) {
+                Text("Quotes")
                     .font(.subheadline)
                     .padding(.vertical, 10)
+                    .foregroundColor(Color.black)
             }
             
+            
             NavigationLink(destination: Text("Item 2")) {
-                Text("Item 2")
+                Text("Meditate")
                     .font(.subheadline)
                     .padding(.vertical, 10)
+                    .foregroundColor(Color.black)
+            }
+            
+            NavigationLink(destination: Text("Item 3")) {
+                Text("Todo")
+                    .font(.subheadline)
+                    .padding(.vertical, 10)
+                    .foregroundColor(Color.black)
+            }
+            
+            NavigationLink(destination: Text("Item 4")) {
+                Text("Recomendations")
+                    .font(.subheadline)
+                    .padding(.vertical, 10)
+                    .foregroundColor(Color.black)
             }
             
             
