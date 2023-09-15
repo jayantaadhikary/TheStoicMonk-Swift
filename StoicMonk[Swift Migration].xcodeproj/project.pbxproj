@@ -13,6 +13,7 @@
 		7D464F002AB4116C00BBD34E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D464EFF2AB4116C00BBD34E /* Preview Assets.xcassets */; };
 		7D464F192AB4147400BBD34E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D464F182AB4147400BBD34E /* LoginView.swift */; };
 		7D464F1B2AB42A4200BBD34E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D464F1A2AB42A4200BBD34E /* HomeView.swift */; };
+		7D464F242AB4406B00BBD34E /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D464F232AB4406B00BBD34E /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7D464EFF2AB4116C00BBD34E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D464F182AB4147400BBD34E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7D464F1A2AB42A4200BBD34E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7D464F232AB4406B00BBD34E /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		7D464EF72AB4116B00BBD34E /* StoicMonk[Swift Migration] */ = {
 			isa = PBXGroup;
 			children = (
+				7D464F1C2AB4400000BBD34E /* Model */,
 				7D464EF82AB4116B00BBD34E /* StoicMonk_Swift_Migration_App.swift */,
 				7D464EFA2AB4116B00BBD34E /* ContentView.swift */,
 				7D464F182AB4147400BBD34E /* LoginView.swift */,
@@ -71,6 +74,14 @@
 				7D464EFF2AB4116C00BBD34E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D464F1C2AB4400000BBD34E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D464F232AB4406B00BBD34E /* Quote.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 				7D464F192AB4147400BBD34E /* LoginView.swift in Sources */,
 				7D464F1B2AB42A4200BBD34E /* HomeView.swift in Sources */,
 				7D464EFB2AB4116B00BBD34E /* ContentView.swift in Sources */,
+				7D464F242AB4406B00BBD34E /* Quote.swift in Sources */,
 				7D464EF92AB4116B00BBD34E /* StoicMonk_Swift_Migration_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
