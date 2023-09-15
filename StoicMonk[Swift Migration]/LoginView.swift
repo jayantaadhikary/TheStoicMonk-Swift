@@ -17,16 +17,17 @@ struct LoginView: View {
                 
                 VStack{
                     Spacer()
-                    NavigationLink(destination: HomeView()) {
-                                            Text("Welcome")
-                                                .padding(.horizontal, 64)
-                                                .cornerRadius(20)
-                                                .frame(height: 18)
-                                                .foregroundColor(.white) // Set text color
-                                        }
-                                        .buttonStyle(.borderedProminent)
-                                        .tint(Color(UIColor(red: 16/255, green: 109/255, blue: 96/255, alpha: 1.0)))
-        
+                    NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true)) {
+                        Text("Welcome")
+                            .padding(.horizontal, 64)
+                            .cornerRadius(20)
+                            .frame(height: 18)
+                            .foregroundColor(.white) // Set text color
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(Color(UIColor(red: 16/255, green: 109/255, blue: 96/255, alpha: 1.0)))
+                    
+                    
                     
                     
                     

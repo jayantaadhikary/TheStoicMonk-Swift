@@ -14,9 +14,48 @@ struct HomeView: View {
     
     var body: some View {
         VStack{
+            Text("Stoic Quotes")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color(red: 0.043137254901960784, green: 0.29411764705882354, blue: 0.11372549019607843))
             
-            Text(quote ?? "Not Found")
-            Text(author ?? "Not Found")
+            
+            VStack {
+                Text(quote ?? "Not Found")
+                    .font(.system(size: 18))
+                    .padding(.horizontal, 25)
+                    .padding(.top, 15)
+                HStack {
+                    Spacer()
+                    Text("- \(author ?? "Not Found")")
+                        .font(.system(size: 15))
+                        .padding(15)
+                }
+                
+            }
+            .foregroundColor(Color.white)
+            .background(Color(UIColor(red: 16/255, green: 109/255, blue: 96/255, alpha: 1.0)))
+            .cornerRadius(10)
+            .padding(30)
+            .frame(maxWidth: .infinity, alignment: .center)
+            
+            Button {
+                Task {
+                    await apiCall()
+                }
+            } label: {
+                Text("Refresh")
+                    .font(.system(size: 16))
+                    .padding(.horizontal, 50)
+                    .padding(.vertical, 25)
+                    .cornerRadius(12)
+                    .frame(height: 24)
+                    .foregroundColor(.white)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(Color(red: 0.043137254901960784, green: 0.29411764705882354, blue: 0.11372549019607843))
+            
+            
         }
         .onAppear{
             Task {
@@ -26,13 +65,15 @@ struct HomeView: View {
         
     }
     
+    
+    
     func apiCall() async{
         if let url = URL(string: "https://stoic-quotes.com/api/quote") {
             let request = URLRequest(url: url)
             
             do {
-                let (data, response) = try await URLSession.shared.data(for: request)
-                    
+                let (data, _) = try await URLSession.shared.data(for: request)
+                
                 let decoder = JSONDecoder()
                 
                 do {
@@ -41,8 +82,8 @@ struct HomeView: View {
                     self.quote =  quote.text ?? "Not Found"
                     self.author = quote.author ?? "Not Found"
                     
-//                    print(quote.author ?? "Not Found")
-//                    print(quote.text ?? "Not Found")
+                    //                    print(quote.author ?? "Not Found")
+                    //                    print(quote.text ?? "Not Found")
                     
                 } catch {
                     print(error)
