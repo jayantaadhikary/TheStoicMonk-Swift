@@ -19,7 +19,7 @@ struct SideMenuView: View {
             }
             
             
-            NavigationLink(destination: Text("Item 2")) {
+            NavigationLink(destination: MeditationView().navigationBarBackButtonHidden(true)) {
                 Text("Meditate")
                     .font(.subheadline)
                     .padding(.vertical, 10)

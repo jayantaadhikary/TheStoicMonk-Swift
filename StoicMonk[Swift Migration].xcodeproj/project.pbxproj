@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D3963A22AB5F2A100F46EF8 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D3963A12AB5F2A100F46EF8 /* backgroundMusic.mp3 */; };
 		7D464EF92AB4116B00BBD34E /* StoicMonk_Swift_Migration_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D464EF82AB4116B00BBD34E /* StoicMonk_Swift_Migration_App.swift */; };
 		7D464EFB2AB4116B00BBD34E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D464EFA2AB4116B00BBD34E /* ContentView.swift */; };
 		7D464EFD2AB4116C00BBD34E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D464EFC2AB4116C00BBD34E /* Assets.xcassets */; };
@@ -14,10 +15,12 @@
 		7D464F192AB4147400BBD34E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D464F182AB4147400BBD34E /* LoginView.swift */; };
 		7D464F1B2AB42A4200BBD34E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D464F1A2AB42A4200BBD34E /* HomeView.swift */; };
 		7D464F242AB4406B00BBD34E /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D464F232AB4406B00BBD34E /* Quote.swift */; };
+		7D7E03132AB5623800E0A360 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E03122AB5623800E0A360 /* MeditationView.swift */; };
 		7DE244FA2AB4C8BB000D5431 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE244F92AB4C8BB000D5431 /* SideMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D3963A12AB5F2A100F46EF8 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		7D464EF52AB4116B00BBD34E /* StoicMonk[Swift Migration].app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StoicMonk[Swift Migration].app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D464EF82AB4116B00BBD34E /* StoicMonk_Swift_Migration_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoicMonk_Swift_Migration_App.swift; sourceTree = "<group>"; };
 		7D464EFA2AB4116B00BBD34E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		7D464F182AB4147400BBD34E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7D464F1A2AB42A4200BBD34E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7D464F232AB4406B00BBD34E /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		7D7E03122AB5623800E0A360 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		7DE244F92AB4C8BB000D5431 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +69,10 @@
 				7D464F182AB4147400BBD34E /* LoginView.swift */,
 				7D464F1A2AB42A4200BBD34E /* HomeView.swift */,
 				7DE244F92AB4C8BB000D5431 /* SideMenuView.swift */,
+				7D3963A12AB5F2A100F46EF8 /* backgroundMusic.mp3 */,
 				7D464EFC2AB4116C00BBD34E /* Assets.xcassets */,
 				7D464EFE2AB4116C00BBD34E /* Preview Content */,
+				7D7E03122AB5623800E0A360 /* MeditationView.swift */,
 			);
 			path = "StoicMonk[Swift Migration]";
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 			files = (
 				7D464F002AB4116C00BBD34E /* Preview Assets.xcassets in Resources */,
 				7D464EFD2AB4116C00BBD34E /* Assets.xcassets in Resources */,
+				7D3963A22AB5F2A100F46EF8 /* backgroundMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +166,7 @@
 			files = (
 				7DE244FA2AB4C8BB000D5431 /* SideMenuView.swift in Sources */,
 				7D464F192AB4147400BBD34E /* LoginView.swift in Sources */,
+				7D7E03132AB5623800E0A360 /* MeditationView.swift in Sources */,
 				7D464F1B2AB42A4200BBD34E /* HomeView.swift in Sources */,
 				7D464EFB2AB4116B00BBD34E /* ContentView.swift in Sources */,
 				7D464F242AB4406B00BBD34E /* Quote.swift in Sources */,
