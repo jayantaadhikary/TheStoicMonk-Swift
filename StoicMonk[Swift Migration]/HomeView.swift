@@ -59,9 +59,10 @@ struct HomeView: View {
                     .buttonStyle(.borderedProminent)
                     .tint(Color(red: 0.043137254901960784, green: 0.29411764705882354, blue: 0.11372549019607843))
                     
-                
+                    
                     
                 }
+                
                 
                 GeometryReader { geometry in
                     SideMenuView()
@@ -69,6 +70,11 @@ struct HomeView: View {
                         .animation(.easeInOut(duration: 0.3)) // Add easeInOut animation with a duration
                 }
             }
+            .background(
+                Image("Background")
+                    .resizable()
+                    .ignoresSafeArea()
+            )
             .onAppear{
                 Task {
                     await apiCall()
@@ -91,7 +97,7 @@ struct HomeView: View {
                 
                 
             }
-           
+            
         }
         
         
